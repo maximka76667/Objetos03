@@ -14,10 +14,12 @@ public class Encuesta {
 		this.porcentajeA = 0;
 		this.porcentajeB = 0;
 	}
-	
+
 	public void increaseVotas(boolean isA) {
-		if(isA) this.votosA++; 
-		else this.votosB++;
+		if (isA)
+			this.votosA++;
+		else
+			this.votosB++;
 		this.total++;
 		this.porcentajeA = this.total > 0 ? this.votosA * 100.0 / this.total : 0;
 		this.porcentajeB = this.total > 0 ? this.votosB * 100.0 / this.total : 0;
